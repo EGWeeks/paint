@@ -1,0 +1,17 @@
+* {
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.row {
+
+	display: inline-block;
+}
+
+.single {
+	width: 15px;
+	height: 15px;
+	border: 1px solid #000;
+} 
+
