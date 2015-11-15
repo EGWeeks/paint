@@ -4,14 +4,30 @@
 	padding: 0;
 }
 
-.row {
+#board {
+	padding: 5px;
+	border: 1px solid #000;
+	margin: 5px;
+	max-width: 750px;
+	max-height: 500px;
 
+}
+
+.col {
 	display: inline-block;
 }
 
 .single {
+	display: inline-block;
 	width: 15px;
 	height: 15px;
 	border: 1px solid #000;
+	border-radius: 50%;
 } 
+
+.palette {
+	margin: 2px;
+	text-align: center;
+}
+
 

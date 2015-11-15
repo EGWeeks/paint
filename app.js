@@ -1,6 +1,25 @@
 // 20 rows 20 columns named row1 - row20;
 
 window.onload = function() {
+
+	function boardGen() {
+		var mainBoard = document.getElementById('board');
+		var width = prompt("How many columns would you like?");
+		
+		for(var i=1; i < width; i++){
+			var col = document.createElement('div');
+			mainBoard.appendChild(col);
+			col.className = "col";
+		};
+		col = document.getElementsByClassName('col');
+		for(var num=0; num < col.length; num++){
+			col[num].style['width'] = '10px';
+			col[num].style['height'] = '10px';
+			col[num].style['border'] = '1px solid #bfbfbf';
+		};
+	};
+
+	boardGen();
 	var palDiv = document.getElementsByClassName('palette')[0];
 	var boardId = document.getElementById('board');
 	//array of hex colors
